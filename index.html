@@ -1,9 +1,409 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Nutricionista</title>
+    <link rel="icon" href="images/" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles/style.css" />
+    <script src="scripts/script.js" defer></script>
   </head>
-  <body></body>
+
+  <body>
+    <header class="container-header">
+      <div class="container-banner">
+        <div class="top-banner">
+          <img
+            src="images/header/abstract-top-left.svg"
+            alt="Design virado para esquerda"
+          />
+          <div class="container-text">
+            <img
+              src="images/header/cricket.ball.fill.svg"
+              id="criquete"
+              alt="Críquete"
+            />
+            <p>
+              Participe gratuitamente da nossa demonstração de nutrição
+              personalizada
+            </p>
+            <img
+              src="images/header/arrow-right.svg"
+              alt="Setra para a direita"
+            />
+          </div>
+
+          <img
+            src="images/header/abstract-top-right.svg"
+            alt="Design virado para
+          direita"
+          />
+        </div>
+      </div>
+
+      <nav class="container-nav">
+        <div class="nav-logo">
+          <img src="images/logo.svg" alt="Logo" />
+        </div>
+        <div class="nav-menu">
+          <ul class="nav-list">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="pages/sobre.html">Sobre</a></li>
+            <li><a href="pages/time.html">Time</a></li>
+            <li><a href="pages/processo.html">Processo</a></li>
+            <li><a href="pages/preco.html">Preço</a></li>
+            <li><a href="pages/blog.html">Blog</a></li>
+            <li><a href="#contato">Contate-Nos</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <!-- <section class="hero">
+      <div class="container-hero">
+        <p>Transforme a sua saúde ❤️ com</p>
+        <div class="line"></div>
+        <h1>Coaching Nutricional Personalizado</h1>
+        <p>
+          Bem-vindo à Nutritionist, sua parceira para alcançar a saúde ideal
+          por meio de coaching nutricional personalizado. Nossos
+          nutricionistas certificados estão aqui para orientá-lo em sua
+          jornada de perda de peso, oferecendo planos personalizados e suporte
+          contínuo. Comece sua transformação hoje mesmo e experimente o poder
+          do coaching nutricional personalizado.
+        </p>
+        <button>Comece hoje mesmo</button>
+        <button>Agende uma demonstração</button>
+      </div>
+      <div class="container-clients">
+        <p>Mais de 430 clientes satisfeitos</p>
+        <div class="container-circles">
+          <div class="circle-1"></div>
+          <div class="circle-2"></div>
+          <div class="circle-2"></div>
+        </div>
+      </div>
+    </section> -->
+
+    <!-- <main class="container-main">
+      <section class="container-features">
+        <p>
+          Bem-vindo à seção de destaque do Nutritionist, seu destino definitivo
+          para tudo relacionado a nutrição e bem-estar.
+        </p>
+        <div class="features">
+          <div class="feature-1">
+            <div class="feature-icon">
+              <img src="images/icon-1.svg" alt="Feature 1" />
+              <h2>Nutrição Personalizada</h2>
+            </div>
+            <p>
+              Nossos planos de nutrição são adaptados às suas necessidades
+              individuais, garantindo que você receba o suporte certo para
+              alcançar seus objetivos.
+            </p>
+          </div>
+          <div class="feature-2">
+            <div class="feature-icon">
+              <img src="images/icon-2.svg" alt="Feature 1" />
+              <h2>Orientação de Nutricionistas Certificados</h2>
+            </div>
+            <p>
+              Nossa equipe de nutricionistas experientes e certificados
+              fornecerá orientação e suporte profissional durante toda a sua
+              jornada. Eles responderão às suas perguntas, abordarão suas
+              preocupações e manterão você motivado enquanto trabalha para
+              atingir seus objetivos.
+            </p>
+          </div>
+          <div class="feature-3">
+            <div class="feature-icon">
+              <img src="images/icon-3.svg" alt="Feature 1" />
+              <h2>Rastreamento e análise de alimentos</h2>
+            </div>
+            <p>
+              Monitore sua ingestão alimentar sem esforço usando nosso
+              aplicativo intuitivo. Nossos nutricionistas analisarão seus dados
+              para fornecer insights sobre seus hábitos alimentares, ajudar você
+              a identificar áreas que precisam ser melhoradas e fazer
+              recomendações personalizadas.
+            </p>
+          </div>
+          <div class="feature-4">
+            <div class="feature-icon">
+              <img src="images/icon-4.svg" alt="Feature 1" />
+              <h2>Planejamento de refeições e receitas</h2>
+            </div>
+            <p>
+              Acesse uma vasta coleção de receitas deliciosas e saudáveis,
+              adaptadas às suas necessidades alimentares. Nossos nutricionistas
+              também criarão planos de refeições personalizados, facilitando sua
+              manutenção e o desfrute de refeições nutritivas.
+            </p>
+          </div>
+          <div class="feature-5">
+            <div class="feature-icon">
+              <img src="images/icon-5.svg" alt="Feature 1" />
+              <h2>Coaching de Estilo de Vida e Comportamento</h2>
+            </div>
+            <p>
+              Alcançar resultados sustentáveis ​​exige mais do que apenas um
+              plano alimentar. Nossos nutricionistas trabalharão com você para
+              desenvolver hábitos saudáveis, lidar com a alimentação emocional e
+              fornecer estratégias para superar os obstáculos ao longo do
+              caminho.
+            </p>
+          </div>
+          <div class="feature-6">
+            <div class="feature-icon">
+              <img src="images/icon-6.svg" alt="Feature 1" />
+              <h2>Educação Nutricional e Workshops</h2>
+            </div>
+            <p>
+              Expand your knowledge of nutrition through informative articles
+              and educational workshops. Our nutritionists will equip you with
+              the knowledge and tools to make informed choices for long-term
+              success.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="container-blog">
+        <div class="blog">
+          <h1>Nossos Blogs</h1>
+          <p>
+            Nosso blog é um tesouro de artigos informativos e envolventes,
+            escritos por nossa equipe de nutricionistas, dietistas e
+            especialistas em bem-estar. Veja o que você pode esperar do nosso
+            blog.
+          </p>
+          <div class="blog-list">
+            <div class="blog-1">
+              <img src="images/blog-1.svg" alt="Foto de mulher bebendo agua" />
+              <div class="card">
+                <p>Perda de peso</p>
+                <h2>Os benefícios da hidratação para perda de peso</h2>
+                <p>
+                  Descubra como manter-se hidratado pode ajudar você a atingir
+                  seus objetivos de perda de peso e melhorar sua saúde geral.
+                </p>
+              </div>
+              <div class="blog-social">
+                <img src="images/profile-1.svg" alt="Mulher de rosa" />
+                <h3>Emily Johnson</h3>
+                <p>23 May 2023 - 5 min read</p>
+                <img src="images/hearth.svg" alt="Icone de curtir" />
+                <img src="images/save.svg" alt="Icone de Salvar" />
+              </div>
+            </div>
+            <div class="blog-2">
+              <img src="images/blog-2.svg" alt="Foto de mulher bebendo agua" />
+              <div class="card">
+                <p>Alimentação consciente</p>
+                <h2>Cultivando uma relação saudável com a comida</h2>
+                <p>
+                  Aprenda como praticar a alimentação consciente pode ajudar
+                  você a desenvolver um relacionamento mais saudável com a
+                  comida e melhorar seu bem-estar geral.
+                </p>
+              </div>
+              <div class="blog-social">
+                <img src="images/profile-2.svg" alt="Mulher de rosa" />
+                <h3>Sarah Thompson</h3>
+                <p>23 May 2023 - 5 min read</p>
+                <img src="images/hearth.svg" alt="Icone de curtir" />
+                <img src="images/save.svg" alt="Icone de Salvar" />
+              </div>
+            </div>
+            <div class="blog-3">
+              <img src="images/blog-3.svg" alt="Foto de mulher bebendo agua" />
+              <div class="card">
+                <p>Compreendendo os macronutrientes</p>
+                <h2>Carboidratos, proteínas e gorduras</h2>
+                <p>
+                  Obtenha uma compreensão abrangente dos macronutrientes e seu
+                  papel na sua dieta para uma saúde ideal e controle de peso.
+                </p>
+              </div>
+              <div class="blog-social">
+                <img src="images/profile-3.svg" alt="Mulher de rosa" />
+                <h3>Mark Wilson</h3>
+                <p>23 May 2023 - 5 min read</p>
+                <img src="images/hearth.svg" alt="Icone de curtir" />
+                <img src="images/save.svg" alt="Icone de Salvar" />
+              </div>
+            </div>
+            <div class="blog-4">
+              <img src="images/blog-4.svg" alt="Foto de mulher bebendo agua" />
+              <div class="card">
+                <p>Lanches saudáveis ​​para viagem</p>
+                <h2>Opções rápidas e nutritivas</h2>
+                <p>
+                  Explore uma variedade de ideias de lanches práticos e
+                  saudáveis ​​para mantê-lo abastecido durante todo o dia.
+                </p>
+              </div>
+              <div class="blog-social">
+                <img src="images/profile-4.svg" alt="Mulher de rosa" />
+                <h3>Emily Johnson</h3>
+                <p>23 May 2023 - 5 min read</p>
+                <img src="images/hearth.svg" alt="Icone de curtir" />
+                <img src="images/save.svg" alt="Icone de Salvar" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="container-depoiments">
+        <div class="depoiments">
+          <h1>Our Testimonials</h1>
+          <p>
+            Nossos clientes satisfeitos compartilham suas histórias de sucesso e
+            experiências em sua jornada para uma saúde e bem-estar melhores.
+          </p>
+        </div>
+
+        <div class="depoiments-list">
+          <div class="depoiment-1">
+            <img src="images/Text.svg" alt="Virgula em imagem" />
+            <p>
+              Não tenho palavras para agradecer à Nutritionist pelo seu coaching
+              nutricional personalizado. Ele transformou completamente minha
+              abordagem à alimentação e me ajudou a perder aqueles quilinhos
+              extras. Recomendo muito!
+            </p>
+            <div class="social-depoiment">
+              <img src="images/depoiment-1.svg" alt="Mulher de rosa" />
+              <p>Jennifer Anderson</p>
+            </div>
+          </div>
+          <div class="depoiment-2">
+            <img src="images/Text.svg" alt="Virgula em imagem" />
+            <p>
+              A nutricionista mudou tudo para mim. A orientação especializada e
+              o apoio que recebi da equipe dela tornaram minha jornada de perda
+              de peso muito mais fácil. Obrigada!
+            </p>
+            <div class="social-depoiment">
+              <img src="images/depoiment-2.svg" alt="Mulher de rosa" />
+              <p>Robert Johnson</p>
+            </div>
+          </div>
+          <div class="depoiment-3">
+            <img src="images/Text.svg" alt="Virgula em imagem" />
+            <p>
+              Lutei contra o meu peso por anos até encontrar uma nutricionista.
+              Sua abordagem personalizada e seu plano nutricional personalizado
+              fizeram toda a diferença. Nunca me senti melhor!
+            </p>
+            <div class="social-depoiment">
+              <img src="images/depoiment-3.svg" alt="Mulher de rosa" />
+              <p>Emily Davis</p>
+            </div>
+          </div>
+          <div class="container-slidebar">
+            <img src="images/arrow-left.svg" alt="Setra para a esquerda" />
+            <div id="circle-active"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <img src="images/arrow-right.svg" alt="Setra para a direita" />
+          </div>
+        </div>
+      </section>
+      <section class="container-pricing">
+        <div class="pricing-1">
+          <h1>Nossos Preços</h1>
+          <p>
+            Apresentamos nossas opções flexíveis e acessíveis para apoiá-lo em
+            sua jornada rumo à saúde e nutrição ideais. Acreditamos que todos
+            merecem acesso a recursos e orientação nutricional personalizados.
+          </p>
+        </div>
+        <div class="pricing-2">
+          <div class="assinatura">
+            <button>Mes</button>
+            <button>Ano</button>
+            <p>Economize 50% no ano</p>
+          </div>
+        </div>
+
+        <div class="container-plans">
+          <div class="basic">
+            <h2>Plano Básico</h2>
+            <p>Até 50% de desconto no plano anual</p>
+            <p>
+              Get started on your health journey with our Basic Plan. It
+              includes personalized nutrition coaching, access to our app, meal
+              planning assistance, and email support.
+            </p>
+            <p><strong>R$49</strong>/mês</p>
+            <button>Escolha o plano</button>
+          </div>
+          <div class="premium">
+            <h2>Plano Premium</h2>
+            <p>Até 50% de desconto no plano anual</p>
+            <p>
+              Atualize para o nosso Plano Premium e tenha acesso a recursos
+              aprimorados. Além do Plano Básico, você receberá consultas em
+              vídeo, suporte prioritário e recomendações personalizadas de
+              receitas.
+            </p>
+            <p><strong>R$79</strong>/mês</p>
+            <button>Escolha o plano</button>
+          </div>
+          <div class="ultimate">
+            <h2>Plano Ultimate</h2>
+            <p>Até 50% de desconto no plano anual</p>
+            <p>
+              Experimente todos os benefícios do coaching nutricional
+              personalizado com o nosso Plano Ultimate. Aproveite todos os
+              recursos do Plano Premium, além de suporte por chat 24 horas por
+              dia, 7 dias por semana e workshops exclusivos.
+            </p>
+            <p><strong>R$99</strong>/mês</p>
+            <button>Escolha o plano</button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="container-footer">
+      <div class="footer-menu">
+        <img src="images/logo.svg" alt="Logo" />
+        <ul class="footer-list">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="pages/sobre.html">Sobre</a></li>
+          <li><a href="pages/time.html">Time</a></li>
+          <li><a href="pages/processo.html">Processo</a></li>
+          <li><a href="pages/preco.html">Preço</a></li>
+          <li><a href="pages/blog.html">Blog</a></li>
+          <button>Contate-nos</button>
+        </ul>
+        <h2>Voltar para o Início</h2>
+        <img src="images/arrow-up.svg" alt="seta pra cima" />
+      </div>
+      <div class="footer-contato">
+        <div class="email">
+          <img src="images/email.svg" alt="icone email" />
+          <p>hello@squareup.com</p>
+        </div>
+        <div class="telefone">
+          <img src="images/telefone.svg" alt="icone telefone" />
+          <p>+91 91813 23 2309</p>
+        </div>
+        <div class="endereço">
+          <img src="images/location.svg" alt="icone gps" />
+          <p>Em algum lugar do mundo</p>
+        </div>
+        <p>© 2025 Nutricionista. Todos os direitos reservados.</p>
+      </div>
+    </footer> -->
+  </body>
 </html>
